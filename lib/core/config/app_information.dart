@@ -1,6 +1,6 @@
 class AppInformation {
-  static const name = 'Live stream Simulator';
-  static const title = 'LIVE STREAM SIMULATOR';
+  static const name = 'Flikka';
+  static const title = 'FLIKKA';
   static const appIdAndroid = 'nz.dev.livestream.simulator';
   static const appIdIos = 'nz.dev.livestream.simulator';
   static const masterAdminEmail = 'nzdev25@gmail.com';

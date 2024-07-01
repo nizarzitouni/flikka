@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 abstract class AppPallete {
   // Primary colors
-  static const Color primary = Color(0xff2c9cdb);
-  static const Color secondary = Color(0xffe77328);
+  static const Color primary = Color(0xff410fa3);
+  static const Color secondary = Color(0xff5b7bfe);
   static const Color accent = Color(0xff3a4a5c);
 
   // Background colors
