@@ -1,0 +1,91 @@
+name: flikka
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  #Core
+  flutter_bloc:
+  url_launcher: 
+  get_it: #Simple direct Service Locator
+  rxdart: #RxDart is an implementation of the popular reactiveX api for asynchronous programming, leveraging the native Dart Streams api.
+  fpdart: #Either =>Functional programming in Dart and Flutter.
+  shared_preferences: ^2.2.2 #Flutter plugin for reading and writing simple key-value pairs.
+  talker_flutter: 
+
+
+  #UI
+  flutter_svg:
+  flutter_screenutil:
+  intl: ^0.19.0
+  flutter_markdown: ^0.7.3
+  flutter_launcher_icons: ^0.13.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints:
+  build_runner: # dart run build_runner build --delete-conflicting-outputs
+  json_serializable: ^6.7.1 # Automatically generate code for converting to and from JSON by annotating Dart classes
+  freezed: 
+  very_good_analysis: ^5.1.0
+  flutter_native_splash: ^2.4.0
+  rename:
+
+flutter_launcher_icons:
+	android: true
+	ios: true
+	image_path: "assets/ImageName.png"
+	adaptive_icon_foreground: "assets/logo_foreground.png"
+	adaptive_icon_background: "#ffffff"
+
+flutter:
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/animations/lotties_anim/
+    - assets/svgs/
+    - assets/links/
+  uses-material-design: true
+  
+  fonts:
+    # Arabic Font
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/arabic/cairo/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/arabic/cairo/Cairo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/arabic/cairo/Cairo-Regular.ttf
+          weight: 400
+    # English Font
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/english/poppins/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/english/poppins/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/english/poppins/Poppins-Regular.ttf
+          weight: 400
+    - family: Fredoka
+      fonts:
+        - asset: assets/fonts/english/fredoka/Fredoka dingbats.ttf
+          weight: 500
+        - asset: assets/fonts/english/fredoka/FredokaOne-Regular.ttf
+          weight: 400
